@@ -79,12 +79,12 @@ class Home extends Component {
     })
   }
 
-  render () {
+  render() {
     if (!this.state.loaded) {
       return <Loading />
     }
 
-    const { homeInfo, searchCount, recommend, pin } = this.props
+    const { homeInfo = {}, searchCount, recommend, pin } = this.props
     return (
       <View className='home'>
         <View className='home__search'>

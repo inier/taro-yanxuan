@@ -39,7 +39,7 @@ export default class InfoBase extends Component {
           }
         </View>
 
-        {!!tagList.length &&
+        { tagList && !!tagList.length &&
           <View className='item-info-base__tag'>
             {tagList.map(item => (
               <View key={item.id} className='item-info-base__tag-item'>
